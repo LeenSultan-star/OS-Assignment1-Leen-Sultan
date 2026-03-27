@@ -25,17 +25,27 @@ class Colors {
 
 // Class representing a process that implements Runnable to be run by a thread
 class Process implements Runnable {
+
     private String name; // Name of the process
     private int burstTime; // Total time the process requires to complete (in milliseconds)
     private int timeQuantum; // Time slice (time quantum) allowed per CPU access (in milliseconds)
     private int remainingTime; // Time left for the process to finish its execution
+    private  int priority; //Feature 1: Added priority field to process class and disply in ready queue
+    static int  contextSwitch=0;//Feature 2: Implemented context switch counter and display total at end
+    long creationTime;
+    long waitingTime;//Feature 3: Added waiting time tracking and summary table for processes
 
-    // Constructor to initialize the process with name, burst time, and time quantum
+    // Constructor to initialize the process with name, burst time, time quantum,and priority
     public Process(String name, int burstTime, int timeQuantum) {
         this.name = name;
         this.burstTime = burstTime;
         this.timeQuantum = timeQuantum;
         this.remainingTime = burstTime; // Initially, remaining time is equal to the burst time
+        this.priority=(int)(Math.random()*5)+1;
+        contextSwitch++;
+        this.creationTime=System.currentTimeMillis();
+        waitingTime=System.currentTimeMillis()-creationTime;
+        
     }
 
     // This method will be called when the thread for this process is started
@@ -49,8 +59,11 @@ class Process implements Runnable {
         System.out.println(Colors.BRIGHT_GREEN + "  ▶ " + Colors.BOLD + Colors.CYAN + name + 
                           Colors.RESET + Colors.GREEN + " executing quantum" + Colors.RESET + 
                           " [" + runTime + "ms] ");
+        System.out.println(name+"priority:"+priority+"enterd queue");
+        System.out.println("Total context switches:"+contextSwitch);
+        System.out.println(name +"Waiting Time:"+waitingTime);
         
-        try {
+               try {
             // Simulate quantum execution with progress updates
             int steps = 5; // Number of progress updates
             int stepTime = runTime / steps;
@@ -147,8 +160,8 @@ public class SchedulerSimulation {
     public static void main(String[] args) {
         // ⚠️ IMPORTANT: Put your student ID here to seed the random number generator
         // This makes your output unique to you - DO NOT forget to change this!
-        int studentID = 123456789;  // ← CHANGE THIS TO YOUR ACTUAL STUDENT ID
-        
+        int studentID = 445052128;  // Set my Student ID [445052126]
+
         Random random = new Random(studentID);
         
         // Define the time quantum in milliseconds (the maximum time a process gets in one round)
