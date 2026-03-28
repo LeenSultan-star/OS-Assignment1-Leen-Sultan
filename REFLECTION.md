@@ -9,7 +9,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Write your answer here. Discuss specific concepts like thread creation, thread states, how threads execute concurrently, what surprised you, etc.]
+[I learned how multithreading works in Java and how threads can run concurrently. I understood how to create threads using the Runnable interface and how to manage them using methods like start(), join(), and sleep(). This assignment helped me understand how CPU scheduling works using the Round-Robin algorithm. I also learned how processes share CPU time fairly. Overall, it improved my understanding of operating systems concepts.]
 
 ---
 
@@ -17,7 +17,8 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Describe the specific challenge. Was it understanding the code? Implementing a feature? Using Git? Explain what made it difficult and how it relates to the course concepts.]
+[The most challenging part was implementing the waiting time and understanding how to calculate it correctly. I found it difficult to know where to place the code and how to use System.currentTimeMillis(). Also, debugging errors in multithreading was not easy because multiple processes run at the same time. This made it harder to track issues. However, after testing multiple times, I managed to solve it.
+.]
 
 ---
 
@@ -25,7 +26,8 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Describe your problem-solving approach. Did you read documentation? Ask for help? Debug systematically? What resources did you use? What strategies worked?]
+[I solved my problems by testing the code step by step and using print statements to understand what was happening. I also searched online for examples and explanations of Java threading. Breaking the problem into smaller parts helped me a lot. Additionally, I used trial and error to fix mistakes. This approach helped me understand the logic better.
+]
 
 ---
 
@@ -33,7 +35,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Give specific examples from real applications you use (web browsers, games, mobile apps, etc.). Explain why threads are useful in those scenarios. Connect to what you learned in this assignment.]
+[Multithreading is used in many real-world applications such as web servers and mobile apps. For example, web servers handle multiple users at the same time using threads. Also, in games, different tasks like graphics, sound, and user input run in parallel using threads. This improves performance and responsiveness. The concepts I learned in this assignment can be applied to build efficient and fast systems.]
 
 ---
 
@@ -47,12 +49,11 @@ Answer the following questions about your learning experience. Each answer shoul
 
 ### How confident do you feel about multithreading concepts now?
 
-[Rate yourself and explain: Beginner / Intermediate / Confident]
+I feel much more confident about multithreading concepts after completing this assignment. At the beginning, I had only a basic understanding of threads and how they work. However, through implementing the scheduling simulation, I learned how threads are created and managed using the Runnable interface. I also understood important concepts such as thread lifecycle, context switching, and CPU scheduling using the Round-Robin algorithm. Working on this assignment helped me see how these concepts are applied in real programs. Overall, I feel more comfortable working with threads and understanding their behavior.
 
-[Explain your rating - what do you understand well? What needs more practice?]
 
 ---
 
 ### Feedback on the assignment
 
-[Any comments about the assignment? Was it helpful? Too easy/hard? Suggestions for improvement?]
+[This assignment was very useful in helping me understand multithreading concepts in a practical way. I liked how it combined both coding and theoretical understanding. The starter code was helpful, but some parts were a bit challenging, especially when implementing new features like waiting time and context switching. I think adding more examples or explanations could make it easier for beginners. Overall, the assignment improved my skills in Java programming, problem-solving, and using GitHub for version control.]

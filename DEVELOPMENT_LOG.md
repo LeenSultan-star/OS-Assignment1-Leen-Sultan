@@ -32,68 +32,85 @@ Document your development process as you work on the assignment. Add entries sho
 
 ## Your Development Log:
 
-### Entry 1 - [Date and Time]
-**What I did**: 
+### Entry 1 - [March 27,2026 , 8:00 PM]
+**What I did**: Set up GitHub repository and cloned project
 
 **Details**: 
+- Created a GitHub account using university email and verified it.
+- Forked the starter repository and renamed it correctly.
+- Cloned the repository to VS Code and explored project files.
 
-**Challenges**: 
+**Challenges**: I did not know how to clone the repository
 
-**Solution**: 
+**Solution**: I followed a tutorial and used VS Code Git Clone
 
-**Time spent**: 
+**Time spent**:  1 hour
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**: 
+### Entry 2 - [March 28,2026 , 11:30 PM]
+**What I did**: Added priority feature to Process class
 
 **Details**: 
+- Added a new integer variable "priority" inside Process class.
+- Generated random priority values between 1 and 5.
+- Displayed priority when process enters the ready queue.
+**Challenges**: I was confused where to add the variable
 
-**Challenges**: 
+**Solution**: I added it inside Process class and constructor
 
-**Solution**: 
-
-**Time spent**: 
+**Time spent**: 30 minutes
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**: 
+### Entry 3 - [March 28,2026 , 7:40 PM]
+
+
+**What I did**: Implemented context switch counter
 
 **Details**: 
+- Created a static counter variable for context switches.
+- Incremented the counter when each process starts execution.
+- Displayed total context switches at the end of simulation.
 
-**Challenges**: 
+**Challenges**:  I added it in wrong place at first
 
-**Solution**: 
+**Solution**: Moved it to SchedulerSimulation class
 
-**Time spent**: 
+**Time spent**: 1 hours
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**: 
+### Entry 4 - [March 28,2026 , 8:40 PM]
+**What I did**: Added waiting time tracking
 
 **Details**: 
+- Added variables to store creation time and waiting time.
+- Used System.currentTimeMillis() to calculate waiting time.
+- Displayed process summary with waiting time at the end.
 
-**Challenges**: 
 
-**Solution**: 
+**Challenges**: Understanding System.currentTimeMillis()
 
-**Time spent**: 
+**Solution**: Tested multiple times until it worked correctly
+
+**Time spent**: 1 hours
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**: 
+### Entry 5 - [March 29,2026 , 9:00 PM]
+**What I did**: Testing and fixing bugs
 
 **Details**: 
+- Ran the program multiple times to verify all features.
+- Checked correctness of priority, context switch, and waiting time.
+- Reviewed and cleaned code from errors.
 
-**Challenges**: 
+**Challenges**: Some outputs were incorrect
 
-**Solution**: 
+**Solution**: Debugged and fixed logic errors
 
-**Time spent**: 
+**Time spent**:1 hour 
 
 ---
 
@@ -106,16 +123,16 @@ Document your development process as you work on the assignment. Add entries sho
 
 **Solution**: 
 
-**Time spent**: 
+**Time spent**:  
 
 ---
 
 ## Summary
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [ 5 hours]
 
-**Most challenging part**: 
+**Most challenging part**: Debugging and fixing bugs
 
-**Most interesting learning**: 
+**Most interesting learning**: Learning about multithreading concepts and implementing them in Java
 
-**What I would do differently next time**: 
+**What I would do differently next time**: More thorough testing and debugging
