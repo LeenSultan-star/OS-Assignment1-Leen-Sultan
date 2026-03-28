@@ -11,7 +11,7 @@ Answer all 4 questions with detailed explanations. Each answer should be **3-5 s
 
 **Your Answer:**
 
-[Write your answer here. Consider: What is a process? What is a thread? How do they differ in terms of memory, resources, creation overhead? Why are threads more suitable for this simulation?]
+[A process is an independent program with its own memory space, while a thread is a smaller unit of a process that shares memory with other threads. Threads are faster to create and require less overhead compared to processes. In this assignment, we used threads because they allow better performance and easier communication. Also, threads share the same memory, making data access faster.]
 
 ---
 
@@ -21,15 +21,15 @@ Answer all 4 questions with detailed explanations. Each answer should be **3-5 s
 
 **Your Answer:**
 
-[Write your answer here. Describe the specific behavior - where does the process go? When does it run again? Give an example from your actual program output showing a process that was re-queued.]
+[In Round-Robin scheduling, if a process does not finish within its time quantum, it is placed back in the ready queue.  ]
 
 Example from my output:
 ```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
+[For example, in my output, process P1 ran for a short time and then returned to the queue.]
 ```
 
 **Explanation of example:**
-[Explain what's happening in the output snippet you pasted]
+[This ensures fairness because every process gets a chance to execute. This behavior prevents any process from monopolizing the CPU.]
 
 ---
 
@@ -41,15 +41,17 @@ Example from my output:
 
 [Write your answer here. For each state, explain when P1 enters that state during the simulation. Use your understanding of the code to trace through the lifecycle.]
 
-1. **New**: [When is P1 in New state?]
+1. **New**: [P1 is in the New state when it is first created at the beginning of the simulation, before being added to the ready queue.
+]
 
-2. **Runnable**: [When does P1 become Runnable?]
+1. **Runnable**: [P1 becomes Runnable when it is added to the ready queue, as shown in the output: "P1 added to ready queue". At this point, it is ready to execute but waiting for CPU time.]
 
-3. **Running**: [When is P1 Running?]
+2. **Running**: [P1 is in the Running state when it starts executing on the CPU, as shown in the output: "P1 executing quantum [2645ms]".
+]
 
-4. **Waiting**: [When/why would P1 be Waiting?]
+1. **Waiting**: [P1 does not enter the Waiting state in this simulation because its burst time (2645ms) is less than the time quantum (4000ms). Therefore, it completes execution without being interrupted or waiting.]
 
-5. **Terminated**: [When is P1 Terminated?]
+2. **Terminated**: [P1 enters the Terminated state when it finishes execution completely, as shown in the output: "P1 finished execution!" and "Remaining time: 0ms".]
 
 ---
 
@@ -59,31 +61,31 @@ Example from my output:
 
 **Your Answer:**
 
-### Example 1: [Name of application/scenario]
+### Example 1: [ Operating Systems (Time-Sharing Systems)]
 
 **Description**: 
-[Describe the real-world scenario or application]
+[Operating systems like Windows or Linux run multiple programs at the same time, such as browsers, editors, and background processes.]
 
 **Why Round-Robin works well here**: 
-[Explain why Round-Robin scheduling is suitable. Consider fairness, responsiveness, predictability, etc.]
+[Round-Robin scheduling ensures fairness by giving each process a fixed time slice. It improves responsiveness and prevents any single process from monopolizing the CPU.]
 
-### Example 2: [Name of application/scenario]
+### Example 2: [ Web Servers]
 
 **Description**: 
-[Describe the real-world scenario or application]
+[Web servers handle multiple client requests simultaneously when users access websites.]
 
 **Why Round-Robin works well here**: 
-[Explain why Round-Robin scheduling is suitable. Consider fairness, responsiveness, predictability, etc.]
+[Round-Robin scheduling distributes CPU time evenly among requests, ensuring fast response times and preventing delays caused by long-running requests.]
 
 ---
 
 ## Summary
 
 **Key concepts I understood through these questions:**
-1. 
-2. 
-3. 
+1. The lifecycle of a process (New, Runnable, Running, Terminated)
+2. How Round-Robin scheduling works using time quantum 
+3. The concept of context switching between processes
 
 **Concepts I need to study more:**
-1. 
-2. 
+1. The Waiting state and when it occurs (especially with I/O operations)
+2. The difference between process scheduling and thread scheduling

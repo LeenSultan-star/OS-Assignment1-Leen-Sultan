@@ -31,7 +31,8 @@ class Process implements Runnable {
     private int timeQuantum; // Time slice (time quantum) allowed per CPU access (in milliseconds)
     private int remainingTime; // Time left for the process to finish its execution
     private  int priority; //Feature 1: Added priority field to process class and disply in ready queue
-    static int  contextSwitch=0;//Feature 2: Implemented context switch counter and display total at end
+    static int contextSwitch=0;
+    
     long creationTime;
     long waitingTime;//Feature 3: Added waiting time tracking and summary table for processes
 
