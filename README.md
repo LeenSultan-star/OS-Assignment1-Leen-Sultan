@@ -453,8 +453,8 @@ Student Name: [Leen Sultan]
 Student ID: [445052128]
 GitHub Username: [LeenSultan-star]
 Repository Link:https://github.com/LeenSultan-star/OS-Assignment1-Leen-Sultan.git]
-Video Link: [Google Drive link - make sure it's accessible to anyone with the link]
-Date Submitted: [Submission Date]
+Video Link: [https://drive.google.com/file/d/1GiWWbiy8n9dc6btiTj53PLdFFPsjohpx/view?usp=drivesdk]
+Date Submitted: [2 apr 2026]
 ```
 
 **Example:**
